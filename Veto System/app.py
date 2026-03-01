@@ -23,8 +23,8 @@ map_backgrounds = {
     "Breeze": os.path.join(BASE_DIR, "resources", "breeze.webp"),
 }
 
-default_background = os.path.join(BASE_DIR, "resources", "default screen")
-deciding_background = os.path.join(BASE_DIR, "resources", "deceider screen")
+default_background = os.path.join(BASE_DIR, "resources", "default screen.jpg")
+deciding_background = os.path.join(BASE_DIR, "resources", "deceider screen.jpg")
 # ---------- SESSION STATE ----------
 if "available_maps" not in st.session_state:
     st.session_state.available_maps = [
@@ -229,6 +229,7 @@ else:
         st.session_state.ban_stage = "Team 1"
         st.session_state.final_map = None
         st.rerun()
+
 
 
 
