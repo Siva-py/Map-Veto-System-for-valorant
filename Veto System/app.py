@@ -4,7 +4,12 @@ import base64
 import time
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-st.set_page_config(page_title="Valorant Map Veto", layout="wide")
+logo_path = os.path.join(BASE_DIR, "resources", "logo.png")
+st.set_page_config(
+    page_title="Valorant Map Veto",
+    page_icon=logo_path,   
+    layout="wide"
+)
 
 # ---------- IMAGE LOADER ----------
 def get_base64_image(image_path):
@@ -229,6 +234,7 @@ else:
         st.session_state.ban_stage = "Team 1"
         st.session_state.final_map = None
         st.rerun()
+
 
 
 
