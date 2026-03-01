@@ -18,12 +18,12 @@ map_backgrounds = {
     "Bind": os.path.join(BASE_DIR, "resources", "bind.jpg"),
     "Haven": os.path.join(BASE_DIR, "resources", "haven.jpg"),
     "Split": os.path.join(BASE_DIR, "resources", "split.jpg"),
-    "Lotus": os.path.join(BASE_DIR, "resources", "lotus.jpg"),
-    "Sunset": os.path.join(BASE_DIR, "resources", "sunset.WEBP"),
-    "Breeze": os.path.join(BASE_DIR, "resources", "breeze.WEBP"),
+    "Lotus": os.path.join(BASE_DIR, "resources", "lotus.webp"),
+    "Sunset": os.path.join(BASE_DIR, "resources", "sunset.webp"),
+    "Breeze": os.path.join(BASE_DIR, "resources", "breeze.webp"),
 }
 
-default_background = os.path.join(BASE_DIR, "resources", "default screen.WEBP")
+default_background = os.path.join(BASE_DIR, "resources", "default screen")
 deciding_background = os.path.join(BASE_DIR, "resources", "deceider screen")
 # ---------- SESSION STATE ----------
 if "available_maps" not in st.session_state:
@@ -229,6 +229,7 @@ else:
         st.session_state.ban_stage = "Team 1"
         st.session_state.final_map = None
         st.rerun()
+
 
 
 
