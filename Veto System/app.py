@@ -16,7 +16,7 @@ default_background = os.path.join(BASE_DIR, "resources", "default screen.jpg")
 map_backgrounds = {
     "Ascent": os.path.join(BASE_DIR, "resources", "ascent.jpg"),
     "Bind": os.path.join(BASE_DIR, "resources", "bind.jpg"),
-    "Haven": os.path.join(BASE_DIR, "resources", "haven.jpg"),
+    "Haven": os.path.join(BASE_DIR, "resources", "heaven.jpg"),
     "Split": os.path.join(BASE_DIR, "resources", "split.jpg"),
     "Lotus": os.path.join(BASE_DIR, "resources", "lotus.webp"),
     "Sunset": os.path.join(BASE_DIR, "resources", "sunset.webp"),
@@ -229,6 +229,7 @@ else:
         st.session_state.ban_stage = "Team 1"
         st.session_state.final_map = None
         st.rerun()
+
 
 
 
