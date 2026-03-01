@@ -2,6 +2,7 @@ import streamlit as st
 import random
 import base64
 import time
+import os
 
 st.set_page_config(page_title="Valorant Map Veto", layout="wide")
 
@@ -228,6 +229,7 @@ else:
         st.session_state.ban_stage = "Team 1"
         st.session_state.final_map = None
         st.rerun()
+
 
 
 
