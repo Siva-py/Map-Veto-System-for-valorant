@@ -12,17 +12,17 @@ def get_base64_image(image_path):
 
 # ---------- MAP BACKGROUNDS ----------
 map_backgrounds = {
-    "Ascent": r"C:\DM_Drive\The Fianl Spike\web\resources\Ascent.jpg",
-    "Bind": r"C:\DM_Drive\The Fianl Spike\web\resources\bind.jpg",
-    "Haven": r"C:\DM_Drive\The Fianl Spike\web\resources\Heaven.jpg",
-    "Split": r"C:\DM_Drive\The Fianl Spike\web\resources\split.jpg",
-    "Lotus": r"C:\DM_Drive\The Fianl Spike\web\resources\Loading_Screen_Lotus.webp",
-    "Sunset": r"C:\DM_Drive\The Fianl Spike\web\resources\Loading_Screen_Sunset.webp",
-    "Breeze": r"C:\DM_Drive\The Fianl Spike\web\resources\Breeze.webp",
+    "Ascent": r"resources\Ascent.jpg",
+    "Bind": r"resources\bind.jpg",
+    "Haven": r"resources\Heaven.jpg",
+    "Split": r"resources\split.jpg",
+    "Lotus": r"resources\Loading_Screen_Lotus.webp",
+    "Sunset": r"resources\Loading_Screen_Sunset.webp",
+    "Breeze": r"resources\Breeze.webp",
 }
 
-default_background = r"resources/default screen.jpg"
-deciding_background = r"C:\DM_Drive\The Fianl Spike\web\resources\deceider screen.jpg"
+default_background = r"resources\default screen.jpg"
+deciding_background = r"resources\deceider screen.jpg"
 # ---------- SESSION STATE ----------
 if "available_maps" not in st.session_state:
     st.session_state.available_maps = [
@@ -227,3 +227,4 @@ else:
         st.session_state.ban_stage = "Team 1"
         st.session_state.final_map = None
         st.rerun()
+
