@@ -11,18 +11,19 @@ def get_base64_image(image_path):
         return base64.b64encode(img_file.read()).decode()
 
 # ---------- MAP BACKGROUNDS ----------
+default_background = os.path.join(BASE_DIR, "resources", "default screen.jpg")
 map_backgrounds = {
-    "Ascent": r"resources/Ascent.jpg",
-    "Bind": r"resources/bind.jpg",
-    "Haven": r"resources/Heaven.jpg",
-    "Split": r"resources/split.jpg",
-    "Lotus": r"resources/Loading_Screen_Lotus.webp",
-    "Sunset": r"resources/Loading_Screen_Sunset.webp",
-    "Breeze": r"resources/Breeze.webp",
+    "Ascent": os.path.join(BASE_DIR, "resources", "ascent.jpg"),
+    "Bind": os.path.join(BASE_DIR, "resources", "bind.jpg"),
+    "Haven": os.path.join(BASE_DIR, "resources", "haven.jpg"),
+    "Split": os.path.join(BASE_DIR, "resources", "split.jpg"),
+    "Lotus": os.path.join(BASE_DIR, "resources", "lotus.jpg"),
+    "Sunset": os.path.join(BASE_DIR, "resources", "sunset.jpg"),
+    "Breeze": os.path.join(BASE_DIR, "resources", "breeze.jpg"),
 }
 
-default_background = r"resources/default screen.jpg"
-deciding_background = r"resources/deceider screen.jpg"
+default_background = os.path.join(BASE_DIR, "resources", "default screen.jpg")
+deciding_background = os.path.join(BASE_DIR, "resources", "deceider screen")
 # ---------- SESSION STATE ----------
 if "available_maps" not in st.session_state:
     st.session_state.available_maps = [
@@ -227,5 +228,6 @@ else:
         st.session_state.ban_stage = "Team 1"
         st.session_state.final_map = None
         st.rerun()
+
 
 
