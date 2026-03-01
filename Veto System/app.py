@@ -4,7 +4,7 @@ import base64
 import time
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-logo_path = os.path.join(BASE_DIR, "resources", "logo.png")
+logo_path = os.path.join(BASE_DIR, "resources", "logo.jpg")
 st.set_page_config(
     page_title="Valorant Map Veto",
     page_icon="🔥",   
@@ -234,6 +234,7 @@ else:
         st.session_state.ban_stage = "Team 1"
         st.session_state.final_map = None
         st.rerun()
+
 
 
 
