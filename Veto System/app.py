@@ -26,6 +26,8 @@ map_backgrounds = {
     "Lotus": os.path.join(BASE_DIR, "resources", "lotus.webp"),
     "Sunset": os.path.join(BASE_DIR, "resources", "sunset.webp"),
     "Breeze": os.path.join(BASE_DIR, "resources", "breeze.webp"),
+    "Fracture": os.path.join(BASE_DIR, "resources", "fracture.png"),
+    "Pearl": os.path.join(BASE_DIR, "resources", "pearl.jpg")
 }
 
 default_background = os.path.join(BASE_DIR, "resources", "default screen.jpg")
@@ -33,8 +35,8 @@ deciding_background = os.path.join(BASE_DIR, "resources", "deceider screen.jpg")
 # ---------- SESSION STATE ----------
 if "available_maps" not in st.session_state:
     st.session_state.available_maps = [
-        "Ascent", "Bind", "Haven",
-        "Split", "Lotus", "Sunset", "Breeze"
+        "Fracture", "Bind", "Haven",
+        "Split", "Lotus", "Pearl", "Breeze"
     ]
 
 if "ban_stage" not in st.session_state:
@@ -228,8 +230,8 @@ else:
 
     if st.button("RESET VETO"):
         st.session_state.available_maps = [
-            "Ascent", "Bind", "Haven",
-            "Split", "Lotus", "Sunset", "Breeze"
+            "Fracture", "Bind", "Haven",
+            "Split", "Lotus", "Pearl", "Breeze"
         ]
         st.session_state.ban_stage = "Team 1"
         st.session_state.final_map = None
